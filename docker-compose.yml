@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+    adminer_container:
+        image: adminer:latest
+        ports: 
+          - 8989:8080
+        networks:
+          - "configs_default"
+networks:
+  configs_default:
+    external: true
